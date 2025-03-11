@@ -65,7 +65,7 @@ To perform a physical migration:
     
 3. Check the configuration for the directory (`dir`) where Redis stores its database files and the name of the database file (`dbfilename`). In this example, Redis saves the backup into the `/data/dump.rdb` file
 
-	> NOTE: If your Redis Docker container `/data` directory is mounted to a directory on your host, the RDB file is also written to the host directory.
+	> NOTE: If your Redis Docker container `/data` directory is mounted to a directory on your host, the RDB file is also written to that host directory.
 
     ```
     redis 127.0.0.1:6379> CONFIG GET dir dbfilename
